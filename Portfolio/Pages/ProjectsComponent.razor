@@ -1,0 +1,97 @@
+﻿@inject IJSRuntime JSRuntime
+@inject HttpClient Http
+@using System.Threading.Tasks
+
+
+
+<h1 id="Projects"  > Projects </h1>
+
+@if (Projects == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div class="projects-container" >
+
+        
+
+        <div class="wrapper" >
+
+            <i id="left" class="fa-solid fa-angle-left"></i>
+
+            <div class="carousel" @ref="projectConatiner"   >
+
+                @foreach (var project in Projects)
+                {
+                    
+
+                    <div class="project-card"  >
+
+                        <img src="@project.image" alt="project" />
+                        <h2>@project.Title</h2>
+                       
+                        
+                        <button @onclick="() => ShowPopUp(project)"  class="openDescreption" >Description</button>
+
+                    </div>
+                }
+
+            </div>
+
+            <i id="right" class="fa-solid fa-angle-right"></i>
+
+        </div>
+
+        
+    </div>
+}
+
+<ProjectPopUpComponent DisplayPopUp="displayPopUp" SelectedProject="selectedProject" OnClose="ClosePopUp" />
+
+@code {
+
+    public ElementReference projectConatiner;
+
+    public List<Project> Projects { get; set; }
+
+    public bool displayPopUp { get; set; } = false;
+
+    public Project selectedProject { get; set; }
+
+    string[] colors = new string[] { "pink", "dodgerblue", "green", "yellow", "orange", "lightseagreen" };
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        int retry = 0;
+        int maxretry = 5;
+
+        while (Projects == null && retry < maxretry)
+        {
+            Projects = await Http.GetFromJsonAsync<List<Project>>("sample-data/ProjectsJson.json");
+            await Task.Delay(1);
+            retry++;
+        }
+
+        StateHasChanged();
+        await JSRuntime.InvokeVoidAsync("automaticScrollingToProjects");
+        await JSRuntime.InvokeVoidAsync("initializeProjects", projectConatiner);
+
+    }
+
+    private void ShowPopUp(Project project)
+    {
+       
+        selectedProject = project;
+       
+        displayPopUp = true;
+    }
+
+    private void ClosePopUp()
+    {
+        displayPopUp = false;
+    }
+
+}

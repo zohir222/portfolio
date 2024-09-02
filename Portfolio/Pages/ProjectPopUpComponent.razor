@@ -1,0 +1,80 @@
+﻿@inject IJSRuntime JS
+@inject NavigationManager NavigationManager
+
+<div class="popUpDescreption" style="display: @(DisplayPopUp ? "block" : "none")">
+
+    <div id="popUp" class="popUpWrapper">
+
+
+        @if (SelectedProject != null)
+        {
+
+
+            <div class="popUpContent">
+                <div class="popupHeader">
+                    <h1>@SelectedProject.Title</h1>
+                    <button @onclick="ClosePopup">X</button>
+                </div>
+                <div class="popupBody" >
+                    <img src="@SelectedProject.image" />
+                    <p> <span>Description :</span>  @SelectedProject.Description</p>
+                    <p><span>Role :</span> @SelectedProject.Role</p>
+                    <p><span>Technologies :</span> @SelectedProject.Technologies[0]</p>
+                    <p><span>Duration :</span> @SelectedProject.Duration.Days days</p>
+                    <p><span>Challenges :</span> @SelectedProject.Challenge</p>
+                    <p><span>Results :</span> @SelectedProject.Resulte</p>
+                    <p><span>Link :</span> <a class="project-link"> @SelectedProject.Link</a></p>
+                    
+                    
+                </div>
+
+            </div>
+        }
+        else
+        {
+            <p>Loading project details...</p>
+        }
+
+
+    </div>
+
+</div>
+
+@code {
+    [Parameter]
+    public bool DisplayPopUp { get; set; }
+
+    [Parameter]
+    public Project SelectedProject { get; set; }
+
+    [Parameter]
+    public EventCallback OnClose { get; set; }
+
+    [JSInvokableAttribute("ClosePopup")]
+    public void ClosePopup()
+    {
+        if (DisplayPopUp == true)
+            OnClose.InvokeAsync();
+
+    }
+
+
+    private async Task DownloadZip()
+    {
+        var httpClient = new HttpClient { BaseAddress = new Uri(NavigationManager.BaseUri) };
+        var response = await httpClient.GetAsync("DIY_Serial Terminal.msi");
+        var byteArray = await response.Content.ReadAsByteArrayAsync();
+        var base64String = Convert.ToBase64String(byteArray);
+
+        await JS.InvokeVoidAsync("downloadFile", "DIY_Serial Terminal.msi", base64String);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("clickOutSidePop", "popUp", DotNetObjectReference.Create(this));
+        }
+    }
+}
+

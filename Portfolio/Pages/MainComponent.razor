@@ -1,0 +1,79 @@
+﻿@page "/"
+
+@using System.Threading.Tasks
+@inject IJSRuntime JS
+
+
+<h1 class="typewriter">Welcome To My Website</h1>
+
+
+@if (showAboutMe)
+{
+    <section id="AbouteMe" >
+        <AboutMeComponent />
+    </section>
+}
+    
+@if(showProjects)
+{
+    <section class="projectSection" >
+        <ProjectsComponent />
+    </section>
+}
+    
+@if(showContactMe)
+{
+    <section id="ContactMe" >
+        <ContactMeComponent />
+    </section>
+}
+  
+
+
+@code {
+    private bool showAboutMe = false;
+    private bool showProjects = false;
+    private bool showContactMe = false;
+
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("removeCursor");
+        }
+ 
+        if (showContactMe)
+        {
+            await JS.InvokeVoidAsync("automaticScrollingToContactMe");
+            await Task.Delay(1000); // Simulate loading time
+            await JS.InvokeVoidAsync("displayScrolling");
+        }
+    }
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        await Task.Delay(5000); // Simulate loading time
+
+        showAboutMe = true;
+        StateHasChanged(); // Force UI update
+
+        await Task.Delay(7000); // Simulate loading time
+
+        showProjects = true;
+        StateHasChanged(); // Force UI update
+    
+
+        await Task.Delay(3000); // Simulate loading time
+
+        showContactMe = true;
+        //StateHasChanged(); // Force UI update
+   
+    }
+}
+
+

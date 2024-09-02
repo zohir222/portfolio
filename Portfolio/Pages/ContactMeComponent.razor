@@ -1,0 +1,61 @@
+﻿@page "/contact"
+@using System.ComponentModel.DataAnnotations
+@inject HttpClient Http
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>I'd love to hear from you! Whether you have a question or just want to say hi, feel free to drop a message.</p>
+
+    <EditForm Model="@contactForm" OnValidSubmit="@HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div>
+            <label for="name">Name </label>
+            <InputText id="name" @bind-Value="contactForm.Name" />
+            <ValidationMessage For="@(() => contactForm.Name)" />
+        </div>
+
+        <div>
+            <label for="email">Email </label>
+            <InputText id="email" @bind-Value="contactForm.Email" />
+            <ValidationMessage For="@(() => contactForm.Email)" />
+        </div>
+
+        <div>
+            <label for="message">Message </label>
+            <InputTextArea id="message" @bind-Value="contactForm.Message" />
+            <ValidationMessage For="@(() => contactForm.Message)" />
+        </div>
+
+        <button type="submit">Send</button>
+    </EditForm>
+
+    <div class="contact-info">
+        <p>Email: yourname@example.com</p>
+        <p>Phone: +123 456 7890</p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/zohir-bensalem-56a910169/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/zohir222" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+</section>
+
+@code {
+    private ContactFormModel contactForm = new ContactFormModel();
+
+    private async Task HandleValidSubmit()
+    {
+        var response = await Http.PostAsJsonAsync("api/contact", contactForm);
+        if (response.IsSuccessStatusCode)
+        {
+            Console.WriteLine("Form submitted successfully!");
+        }
+        else
+        {
+            Console.WriteLine("Error submitting form.");
+        }
+    }
+}
+
+

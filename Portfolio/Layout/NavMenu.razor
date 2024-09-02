@@ -1,0 +1,71 @@
+﻿<nav>
+
+    <img src="/Images/planet-astronomy-svgrepo-com.svg" />
+
+    <span class="icon" @onclick="ToggleMenu"><i class="fa fa-bars"></i></span>
+
+
+    <div id="dropMenu" class="dropMenu @(isMenuOpen ? "show" : "")">
+        <ul>
+            <li>     
+                <a href="#home" class="nav-link">
+                    <span class="icon" ><i class="fa fa-home"></i></span>
+                    <span>Home</span>        
+                </a>
+            </li>
+            <li>
+                <a href="#about" class="nav-link">
+                    <span class="icon"><i class="fa fa-info-circle"></i></span>
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#projects" @onclick="scrollToProjects" class="nav-link">
+                    <span class="icon"><i class="fa fa-tasks"></i></span>
+                    <span >Projects</span>
+                    
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-link">
+                    <span class="icon"><i class="fa fa-envelope"></i></span>
+                    <span>Contact Me</span>
+                    
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+</nav>
+
+@code {
+    private bool isMenuOpen = false;
+
+    [Inject] IJSRuntime JS { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("addOutsideClickListener", "dropMenu", DotNetObjectReference.Create(this));
+        }
+    }
+
+    private void ToggleMenu()
+    {
+        isMenuOpen = !isMenuOpen;
+    }
+
+    [JSInvokable]
+    public void CloseMenu()
+    {
+        isMenuOpen = false;
+        StateHasChanged();
+    }
+    public async Task scrollToProjects()
+    {
+        await JS.InvokeVoidAsync("automaticScrollingToProjects");
+    }
+}
