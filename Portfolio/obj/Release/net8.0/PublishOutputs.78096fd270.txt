@@ -1,0 +1,1 @@
+G:\Front_End\blazor web assembly projects\stand alone\Portofio2\Portfolio\Portfolio\bin\Release\net8.0\publish\web.config

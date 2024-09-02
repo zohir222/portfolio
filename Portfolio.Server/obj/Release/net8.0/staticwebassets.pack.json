@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio.Server\\wwwroot\\the-complete-reference-html-css-fifth-edition.pdf",
+      "PackagePath": "staticwebassets\\the-complete-reference-html-css-fifth-edition.pdf"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.Portfolio.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.Portfolio.Server.props",
+      "PackagePath": "build\\Portfolio.Server.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Portfolio.Server.props",
+      "PackagePath": "buildMultiTargeting\\Portfolio.Server.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.Portfolio.Server.props",
+      "PackagePath": "buildTransitive\\Portfolio.Server.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

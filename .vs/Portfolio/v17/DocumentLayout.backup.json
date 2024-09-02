@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DFD666F8-B31F-4C34-ADF7-2C8A7A83E28E}|Portfolio\\Portfolio.csproj|g:\\front_end\\blazor web assembly projects\\stand alone\\portofio2\\portfolio\\portfolio\\pages\\maincomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFD666F8-B31F-4C34-ADF7-2C8A7A83E28E}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\pages\\maincomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFD666F8-B31F-4C34-ADF7-2C8A7A83E28E}|Portfolio\\Portfolio.csproj|g:\\front_end\\blazor web assembly projects\\stand alone\\portofio2\\portfolio\\portfolio\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFD666F8-B31F-4C34-ADF7-2C8A7A83E28E}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainComponent.razor",
+              "DocumentMoniker": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\Pages\\MainComponent.razor",
+              "RelativeDocumentMoniker": "Portfolio\\Pages\\MainComponent.razor",
+              "ToolTip": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\Pages\\MainComponent.razor",
+              "RelativeToolTip": "Portfolio\\Pages\\MainComponent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T03:34:01.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Portfolio\\wwwroot\\index.html",
+              "ToolTip": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\index.html",
+              "RelativeToolTip": "Portfolio\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-02T02:49:19.058Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

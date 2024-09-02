@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\bin\\Release\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\obj\\Release\\net8.0\\compressed\\8ntufmqpuj.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\obj\\Release\\net8.0\\scopedcss\\bundle\\Portfolio.styles.css",
+      "PackagePath": "staticwebassets\\Portfolio.styles.css"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\Images\\Projects\\Port Serie Rs232 communication.png",
+      "PackagePath": "staticwebassets\\Images\\Projects\\Port Serie Rs232 communication.png"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\Images\\Projects\\Screenshot_eCommerceWebsite.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Projects\\Screenshot_eCommerceWebsite.jpeg"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\Images\\Projects\\pizza-flexLed.webp",
+      "PackagePath": "staticwebassets\\Images\\Projects\\pizza-flexLed.webp"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\Images\\car01.jfif",
+      "PackagePath": "staticwebassets\\Images\\car01.jfif"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\Images\\fanta-seeklogo.svg",
+      "PackagePath": "staticwebassets\\Images\\fanta-seeklogo.svg"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\Images\\icons\\portfolioIcon.jfif",
+      "PackagePath": "staticwebassets\\Images\\icons\\portfolioIcon.jfif"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\Images\\planet-astronomy-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\Images\\planet-astronomy-svgrepo-com.svg"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\Images\\porfolioMain.jpg",
+      "PackagePath": "staticwebassets\\Images\\porfolioMain.jpg"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\sample-data\\ProjectsJson.json",
+      "PackagePath": "staticwebassets\\sample-data\\ProjectsJson.json"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio\\wwwroot\\site.js",
+      "PackagePath": "staticwebassets\\site.js"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.Portfolio.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.Portfolio.props",
+      "PackagePath": "build\\Portfolio.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Portfolio.props",
+      "PackagePath": "buildMultiTargeting\\Portfolio.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.Portfolio.props",
+      "PackagePath": "buildTransitive\\Portfolio.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

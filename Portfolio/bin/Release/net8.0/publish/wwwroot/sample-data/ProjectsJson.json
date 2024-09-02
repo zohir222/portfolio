@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1,
+    "Image": "/Images/Projects/Port Serie Rs232 communication.png",
+    "Title": "Pc Pic Rs232 Communication",
+    "Description": "A Softwar running on dot.net framwork enabling communication from Pc To Pic Microcontroller and vice versa , using Port Serie Rs232 protocol , So We can make order from pc to Pic or receive pic sensor data and get it on pc  ",
+    "Role": "Developer",
+    "Technologies": [
+      "C#",
+      "Arduino"
+    ],
+    "Duration": "10.00:00:00",
+    "Challenge": "the use of serialPort tool of visual studio",
+    "Result": "perform serial Communication",
+    "Link": "ask-me to share with you if you are intersted on "
+  },
+  {
+    "Id": 2,
+    "Image": "/Images/Projects/Screenshot_eCommerceWebsite.jpeg",
+    "Title": "E-Commerce Website",
+    "Description": "A website where you can store products you want to sell , and goup them in categories and sub-categories so , people can see them in this website and took a closer setailed information and more image , then they could add them to the basket ,then after in the basket they will get the total price , and add their information like phone number and contact information , and then they can make the order online , so the owner of the website could after receive all the commande and he could aso manage its received commands by giving them a status ",
+    "Role": "Developer",
+    "Technologies": [
+      "JavaScript",
+      "Html",
+      "css",
+      "asp.net core MVC ",
+      "sqlite database ",
+      "jquery"
+    ],
+    "Duration": "30.00:00:00",
+    "Challenge": "my new chalenge was the ajax request ",
+    "Result": "the prject was so fast and enabled a good user experience ",
+    "Link": "ask-me to share with you if you are intersted on"
+  },
+  {
+    "Id": 3,
+    "Image": "/Images/Projects/pizza-flexLed.webp",
+    "Title": "Pizza Flex Led banner ",
+    "Description": "a pizza Banner with flex led ",
+    "Role": "maker",
+    "Technologies": [
+      "electronics"
+    ],
+    "Duration": "2.00:00:00",
+    "Challenge": "making an apealing light designe ",
+    "Result": "the customer had enjoy it .. !",
+    "Link": "ask-me to share with you if you are intersted on"
+  }
+  
+
+]

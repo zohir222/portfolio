@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "T7FQ7VAscPc5h3GZSmViE4Ca/comurc9vYQQQzx/a3Q=",
+  "Source": "Portfolio.Server",
+  "BasePath": "_content/Portfolio.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Portfolio.Server\\wwwroot",
+      "Source": "Portfolio.Server",
+      "ContentRoot": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio.Server\\wwwroot\\",
+      "BasePath": "_content/Portfolio.Server",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio.Server\\wwwroot\\the-complete-reference-html-css-fifth-edition.pdf",
+      "SourceId": "Portfolio.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Front_End\\blazor web assembly projects\\stand alone\\Portofio2\\Portfolio\\Portfolio.Server\\wwwroot\\",
+      "BasePath": "_content/Portfolio.Server",
+      "RelativePath": "the-complete-reference-html-css-fifth-edition.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\the-complete-reference-html-css-fifth-edition.pdf"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+G:\Front_End\blazor web assembly projects\stand alone\Portofio2\Portfolio\Portfolio.Server\bin\Release\net8.0\publish\Portfolio.Server.exe
+G:\Front_End\blazor web assembly projects\stand alone\Portofio2\Portfolio\Portfolio.Server\bin\Release\net8.0\publish\appsettings.Development.json
+G:\Front_End\blazor web assembly projects\stand alone\Portofio2\Portfolio\Portfolio.Server\bin\Release\net8.0\publish\appsettings.json
+G:\Front_End\blazor web assembly projects\stand alone\Portofio2\Portfolio\Portfolio.Server\bin\Release\net8.0\publish\Portfolio.Server.dll
+G:\Front_End\blazor web assembly projects\stand alone\Portofio2\Portfolio\Portfolio.Server\bin\Release\net8.0\publish\Portfolio.Server.deps.json
+G:\Front_End\blazor web assembly projects\stand alone\Portofio2\Portfolio\Portfolio.Server\bin\Release\net8.0\publish\Portfolio.Server.runtimeconfig.json
+G:\Front_End\blazor web assembly projects\stand alone\Portofio2\Portfolio\Portfolio.Server\bin\Release\net8.0\publish\Portfolio.Server.pdb
+G:\Front_End\blazor web assembly projects\stand alone\Portofio2\Portfolio\Portfolio.Server\bin\Release\net8.0\publish\BouncyCastle.Cryptography.dll
+G:\Front_End\blazor web assembly projects\stand alone\Portofio2\Portfolio\Portfolio.Server\bin\Release\net8.0\publish\MailKit.dll
+G:\Front_End\blazor web assembly projects\stand alone\Portofio2\Portfolio\Portfolio.Server\bin\Release\net8.0\publish\MimeKit.dll
